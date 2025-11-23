@@ -1,37 +1,42 @@
 import React from "react";
 import Logo from "../assets/header-img/Logo.png";
 
-export default function Header() {
+export default function Header({ darkMode }) {
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-[#DAD7CD] backdrop-blur-md shadow-md sticky top-0 z-50">
-      {/* Logo */}
+    <header
+      className={`flex justify-between items-center px-6 py-4 transition-colors duration-500 ${
+        darkMode ? "bg-gray-800 text-gray-100" : "bg-[#DAD7CD] text-gray-900"
+      }`}
+    >
       <div className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition">
         <img src={Logo} alt="Logo" className="w-11 h-11" />
-        <h5 className="text-2xl font-bold tracking-wide text-gray-900">
-          Fer.Teach
-        </h5>
+        <h5 className="text-2xl font-bold tracking-wide">Fer.Teach</h5>
       </div>
 
-      {/* Navbar */}
-      <nav className="hidden md:flex items-center space-x-8 font-medium text-gray-800">
+      <nav className="hidden md:flex items-center space-x-8 font-medium">
         {[
-          { label: "Asosoiy sahifa", link: "#" },
+          { label: "Asosiy sahifa", link: "#" },
           { label: "Maqolalar", link: "#" },
           { label: "Arxiv", link: "#" },
           { label: "Biz bilan bog'lanish", link: "#" },
         ].map((item, i) => (
           <a key={i} href={item.link} className="relative group transition">
-            <span className="group-hover:text-black">{item.label}</span>
-
-            {/* underline animation */}
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black group-hover:w-full transition-all duration-300"></span>
+            <span className="group-hover:text-black dark:group-hover:text-white">
+              {item.label}
+            </span>
+            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white group-hover:w-full transition-all duration-300"></span>
           </a>
         ))}
       </nav>
 
-      {/* Language Selector */}
       <div>
-        <select className="border border-gray-400 rounded-lg px-3 py-1 bg-white/40 backdrop-blur-sm shadow-sm text-gray-900 focus:ring-2 focus:ring-blue-500 outline-none">
+        <select
+          className={`border border-gray-400 rounded-lg px-3 py-1 backdrop-blur-sm shadow-sm focus:ring-2 focus:ring-blue-500 outline-none ${
+            darkMode
+              ? "bg-gray-700/40 text-gray-100"
+              : "bg-white/40 text-gray-900"
+          }`}
+        >
           <option value="UZ">🇺🇿 Uzbek</option>
           <option value="RU">🇷🇺 Русский</option>
           <option value="EN">🇬🇧 English</option>
