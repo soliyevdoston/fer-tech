@@ -82,6 +82,39 @@ export default function Main({ darkMode }) {
                   >
                     {book.description}
                   </p>
+                  {/* INFO BOX */}
+                  <div
+                    className={`p-4 rounded-xl space-y-2 shadow-inner transition-colors duration-500 ${
+                      darkMode
+                        ? "bg-gray-700 text-gray-200" // DARK MODE
+                        : "bg-[#DAD7CD] text-gray-800" // LIGHT MODE
+                    }`}
+                  >
+                    <p>
+                      <span className="font-bold">Срок подачи:</span>{" "}
+                      {book.info.deadline}
+                    </p>
+                    <p>
+                      <span className="font-bold">Период рассмотрения:</span>{" "}
+                      {book.info.reviewPeriod}
+                    </p>
+                    <p>
+                      <span className="font-bold">Публикация статьи:</span>{" "}
+                      {book.info.publicationArticle}
+                    </p>
+                    <p>
+                      <span className="font-bold">Публикация выпуска:</span>{" "}
+                      {book.info.publicationIssue}
+                    </p>
+                    <p>
+                      <span className="font-bold">Индексация:</span>{" "}
+                      {book.info.indexing}
+                    </p>
+                    <p>
+                      <span className="font-bold">Опубликован:</span>{" "}
+                      {book.info.published}
+                    </p>
+                  </div>
 
                   <div className="space-y-3">
                     {displayedArticles.map((article, i) => (
