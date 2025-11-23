@@ -4,7 +4,7 @@ import Logo from "../assets/header-img/Logo.png";
 export default function Header({ darkMode }) {
   return (
     <header
-      className={`flex justify-between items-center px-6 py-4 transition-colors duration-500 ${
+      className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 transition-colors duration-500 ${
         darkMode ? "bg-gray-800 text-gray-100" : "bg-[#DAD7CD] text-gray-900"
       }`}
     >
@@ -37,7 +37,8 @@ export default function Header({ darkMode }) {
               : "bg-white/40 text-gray-900"
           }`}
         >
-          <option value="UZ">🇺🇿 Uzbek</option>
+          <option value="UZ">🇺🇿 Uzbek (Lotin)</option>
+          <option value="UZC">🇺🇿 Ўзбекча (Кирилл)</option>
           <option value="RU">🇷🇺 Русский</option>
           <option value="EN">🇬🇧 English</option>
         </select>
