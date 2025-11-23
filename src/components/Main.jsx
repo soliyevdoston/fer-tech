@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import books from "../data/books.json";
 import imageMap from "../data/imageMap";
-import HeroBg from "../assets/main-img/bg-img-hero.jpg";
+import HeroBg from "../assets/main-img/hero-light.jpg";
 
 export default function Main() {
   const [expandedBooks, setExpandedBooks] = useState([]);

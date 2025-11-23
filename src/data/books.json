@@ -13,28 +13,190 @@
         "author": "Tishabayeva Lola Arifovna Tishabayeva Lola Arifovna"
       },
       {
-        "name": "Kosmik aloqa tizimlari uchun interfeys",
-        "link": "/article2",
-        "downloadLink": "/pdfs/article2.pdf",
+        "name": "Kosmik aloqa tizimlari uchun foydalanuvchi interfeysini ishlab chiqish",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1726",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1726/2015",
         "author": "Rashidjon Xoliqnazarov, Abduvali Boltayev"
       },
       {
-        "name": "AI in digital library",
-        "link": "/article3",
-        "downloadLink": "/pdfs/article3.pdf",
-        "author": "AMarina Lazareva"
+        "name": "Sun’iy intellekt texnologiyalari asosida talabalarning og‘zaki javoblarini baholash va nazorat qilish tizimini ishlab chiqish",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1727",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1727/2016",
+        "author": "Xasanboy Raxmonaliyev, Asliddin Komiljonov"
       },
       {
-        "name": "Qo‘shimcha maqola 1",
-        "link": "/article4",
-        "downloadLink": "/pdfs/article4.pdf",
-        "author": "Author 1"
+        "name": "The role of artificial intelligence in the development of adaptive services for digital library users",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1728",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1728/2017",
+        "author": "Marina Lazareva"
       },
       {
-        "name": "Qo‘shimcha maqola 2",
-        "link": "/article5",
-        "downloadLink": "/pdfs/article5.pdf",
-        "author": "Author 2"
+        "name": "Building Intelligent Systems: An Educational Machine Learning Project with Practical Applications",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1729",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1729/2018",
+        "author": "Sevinch Abdikhamidova"
+      },
+      {
+        "name": "Sun’iy intellekt va simsiz aloqa texnologiyalariga asoslangan aqlli svetaforlarni masofadan intellektual tahlil qilish va boshqarish tizimini yaratish",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1731",
+        "downloadLink": "/",
+        "author": "Rashidjon Xoliqnazarov, Asilbek Mo’minov"
+      },
+      {
+        "name": "Mustaqil O‘zbekiston respublikasining tashkil topishi uning tarixiy ahamiyati",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1732",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1732/2020",
+        "author": "Azizbek O‘ktamjonov, Salohiddin Mo‘minov"
+      },
+      {
+        "name": "Maʼlumotlarni normalizatsiyalash nazariyasi va uning amaliy ahamiyati (OTM talabalari maʼlumotlar bazasi misolida)",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1733",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1733/2021",
+        "author": "Nozimaxon Rayimjonova"
+      },
+      {
+        "name": "The concept of health and safety in informatics",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1734",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1734/2022",
+        "author": "Nafisa Nematova"
+      },
+      {
+        "name": "The importance of water in daily life",
+        "link": "/",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1735",
+        "author": "Madina Abdurakhmonova"
+      },
+      {
+        "name": "Multimedia texnologiyalari va elektron ta’lim resurslari integratsiyasi orqali kasbiy fanlar bo‘yicha o‘quvchilarda mustaqil o‘qish va o‘rganish ko‘nikmalarini shakllantirish metodikasini yaratish",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1736",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1736/2023",
+        "author": "Ulug‘bek Solijonov, Nafisa Muxammadjonova"
+      },
+      {
+        "name": "Akademik litseylar uchun ilmiy ta’limni qo‘llab-quvvatlovchi sun’iy intellekt asosida o‘quv resurslarini avtomatik tavsiya etuvchi veb-platformani ishlab chiqish",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1737",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1737/2024",
+        "author": "Faxriyor Raxmataliyev, Umidjon Komilov"
+      },
+      {
+        "name": "Jamiyatda gender notenglikni bartaraf etishning ijtimoiy-madaniy asoslari",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1739",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1739/2025",
+        "author": "Lola Tishabayeva"
+      },
+      {
+        "name": "Qurilish muhandisligi yo’nalishi talabalarining axborot kompetentligini takomillashtirish mexanizmlari va tarkibiy qismlari",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1740",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1740/2026",
+        "author": "Baxodir Azamxonov"
+      },
+      {
+        "name": "Robot manipulyatorlarining aktuator tizimlarini nergotejamkor modellar asosida loyihalash",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1741",
+        "downloadLink": "https://rai-journal.uz/index.php/rai/article/view/1741/2027",
+        "author": "Alimirzo Polvonov"
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
+      },
+      {
+        "name": "",
+        "link": "",
+        "downloadLink": "",
+        "author": ""
       }
     ],
     "info": {
