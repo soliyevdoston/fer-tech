@@ -13,6 +13,7 @@ export default function Footer({ darkMode }) {
 
   return (
     <footer
+      id="footer"
       className={`pt-12 pb-6 transition-colors duration-500 ${
         darkMode ? "bg-gray-800 text-gray-100" : "bg-[#C7C9BB] text-gray-900"
       }`}
@@ -51,6 +52,23 @@ export default function Footer({ darkMode }) {
                 href="#"
               >
                 Maqolalar
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-blue-600 transition-colors duration-300"
+                href="#"
+              >
+                Qidiruv
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                className="hover:text-blue-600 transition-colors duration-300"
+                href="#"
+              >
+                Maslahatlar
               </a>
             </li>
           </ul>

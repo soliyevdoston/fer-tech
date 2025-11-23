@@ -2,6 +2,14 @@ import React from "react";
 import Logo from "../assets/header-img/Logo.png";
 
 export default function Header({ darkMode }) {
+  // Scroll funksiyasi
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 transition-colors duration-500 ${
@@ -15,17 +23,21 @@ export default function Header({ darkMode }) {
 
       <nav className="hidden md:flex items-center space-x-8 font-medium">
         {[
-          { label: "Asosiy sahifa", link: "#" },
-          { label: "Maqolalar", link: "#" },
-          { label: "Arxiv", link: "#" },
-          { label: "Biz bilan bog'lanish", link: "#" },
+          { label: "Asosiy sahifa", id: "hero" },
+          { label: "Maqolalar", id: "maqolalar" },
+          { label: "Qidiruv", id: "search" },
+          { label: "Biz bilan bog'lanish", id: "footer" },
         ].map((item, i) => (
-          <a key={i} href={item.link} className="relative group transition">
+          <button
+            key={i}
+            onClick={() => handleScroll(item.id)}
+            className="relative group transition text-left"
+          >
             <span className="group-hover:text-black dark:group-hover:text-white">
               {item.label}
             </span>
             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white group-hover:w-full transition-all duration-300"></span>
-          </a>
+          </button>
         ))}
       </nav>
 

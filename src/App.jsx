@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import Search from "./components/Search";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,6 +20,7 @@ export default function App() {
     <div className="transition-colors duration-500 min-h-screen">
       <Header darkMode={darkMode} />
       <Main darkMode={darkMode} />
+      <Search darkMode={darkMode} />
       <Footer darkMode={darkMode} />
 
       {/* Dark mode toggle */}

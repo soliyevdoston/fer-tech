@@ -21,6 +21,7 @@ export default function Main({ darkMode }) {
     >
       {/* HERO SECTION */}
       <section
+        id="hero"
         className="relative bg-cover bg-center h-[600px] flex items-center transition-all duration-500"
         style={{
           backgroundImage: `url(${darkMode ? HeroDark : HeroLight})`,
@@ -32,15 +33,18 @@ export default function Main({ darkMode }) {
             Ilmiy kitoblar va maqolalar jamlanmasi
           </h1>
           <p className="text-lg sm:text-xl max-w-4xl mx-auto mb-6 leading-relaxed drop-shadow">
-            Fer.Teach platformada siz sun'iy intellekt, data science, texnika va
-            boshqa ilmiy yo‘nalishlarda yaratilgan eng so‘nggi maqolalar,
-            tadqiqotlar va kitoblarni topishingiz mumkin.
+            Fer.Teach platformasi sizga O‘zbekiston va xalqaro ilmiy jurnallar,
+            konferensiya materiallari, tadqiqotlar bazasi va ilmiy maqolalarni
+            tezkor qidirish imkonini taqdim etadi. Bu yerda siz so‘nggi ilmiy
+            yangiliklar, tadqiqot natijalari va akademik ishlar bilan tanishib,
+            o‘z bilim doirangizni kengaytirishingiz mumkin. Ilm-fan va ta’lim
+            resurslarini bitta platformada toping!
           </p>
         </div>
       </section>
 
       {/* ARTICLES SECTION */}
-      <section className="container py-16">
+      <section id="maqolalar" className="container py-16">
         <h2 className="text-4xl font-bold text-center mb-12">
           Ilmiy Maqolalar
         </h2>
