@@ -1,0 +1,35 @@
+@import "tailwindcss";
+.container {
+  width: 100%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes diagonalGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-border {
+  animation: diagonalGradient 6s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.group:hover {
+  background-size: 300% 300%;
+}
