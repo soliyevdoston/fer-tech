@@ -62,7 +62,7 @@ export default function Main({ darkMode }) {
                 <img
                   src={imageMap[book.image]}
                   alt={book.title}
-                  className="w-full md:w-1/3 h-auto object-cover rounded-2xl border transition duration-300 hover:scale-105"
+                  className="w-full md:w-1/3 h-auto object-cover rounded-2xl border transition duration-300 hover:scale-105 mt-[35px]"
                   style={{ borderColor: darkMode ? "#4B5563" : "#D1D5DB" }}
                 />
 
