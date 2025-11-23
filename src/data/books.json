@@ -1,0 +1,237 @@
+[
+  {
+    "id": 1,
+    "title": "Research and Implementation",
+    "image": "resarch.png",
+    "description": "AI bo‘yicha asosiy tushunchalar va ilmiy tadqiqotlar jamlanmasi.",
+    "pageLink": "https://rai-journal.uz/index.php/rai",
+    "articles": [
+      {
+        "name": "Jamiyatda ayolning roli: tarixiy va zamonaviy nuqtai nazar",
+        "link": "https://rai-journal.uz/index.php/rai/article/view/1725",
+        "downloadLink": " https://rai-journal.uz/index.php/rai/article/view/1725/2014",
+        "author": "Tishabayeva Lola Arifovna Tishabayeva Lola Arifovna"
+      },
+      {
+        "name": "Kosmik aloqa tizimlari uchun interfeys",
+        "link": "/article2",
+        "downloadLink": "/pdfs/article2.pdf",
+        "author": "Rashidjon Xoliqnazarov, Abduvali Boltayev"
+      },
+      {
+        "name": "AI in digital library",
+        "link": "/article3",
+        "downloadLink": "/pdfs/article3.pdf",
+        "author": "AMarina Lazareva"
+      },
+      {
+        "name": "Qo‘shimcha maqola 1",
+        "link": "/article4",
+        "downloadLink": "/pdfs/article4.pdf",
+        "author": "Author 1"
+      },
+      {
+        "name": "Qo‘shimcha maqola 2",
+        "link": "/article5",
+        "downloadLink": "/pdfs/article5.pdf",
+        "author": "Author 2"
+      }
+    ],
+    "info": {
+      "deadline": "27.11.2025",
+      "reviewPeriod": "3 days",
+      "publicationArticle": "3 days",
+      "publicationIssue": "30.11.2025",
+      "indexing": "10 days after publication",
+      "published": "2025-11-19"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Engineering problems and innovations",
+    "image": "enginering.jpg",
+    "description": "Data Science asoslari va amaliy tahlil metodlari.",
+    "pageLink": "https://epai.uz/index.php/journal",
+    "articles": [
+      {
+        "name": "Pythonda Data Cleaning",
+        "link": "/article6",
+        "downloadLink": "/pdfs/article6.pdf",
+        "author": "Author 1"
+      },
+      {
+        "name": "Statistik modellash",
+        "link": "/article7",
+        "downloadLink": "/pdfs/article7.pdf",
+        "author": "Author 2"
+      },
+      {
+        "name": "Big Data texnologiyalari",
+        "link": "/article8",
+        "downloadLink": "/pdfs/article8.pdf",
+        "author": "Author 3"
+      },
+      {
+        "name": "Qo‘shimcha maqola 3",
+        "link": "/article9",
+        "downloadLink": "/pdfs/article9.pdf",
+        "author": "Author 4"
+      },
+      {
+        "name": "Qo‘shimcha maqola 4",
+        "link": "/article10",
+        "downloadLink": "/pdfs/article10.pdf",
+        "author": "Author 5"
+      }
+    ],
+    "info": {
+      "deadline": "15.12.2025",
+      "reviewPeriod": "Within 10 days",
+      "publicationArticle": "N/A",
+      "publicationIssue": "27.12.2025",
+      "indexing": "within a week after pre-print publication",
+      "published": "2025-10-03"
+    }
+  },
+  {
+    "id": 3,
+    "title": "International Online Multidisciplinary Conference",
+    "image": "iomc-2025.png",
+    "description": "Algoritmlar nazariyasi va amaliy yechimlari.",
+    "pageLink": "https://tezislar.uz/index.php/iomc",
+    "articles": [
+      {
+        "name": "Greedy algoritmlar",
+        "link": "/article11",
+        "downloadLink": "/pdfs/article11.pdf",
+        "author": "Author 1"
+      },
+      {
+        "name": "DP: Dynamic Programming",
+        "link": "/article12",
+        "downloadLink": "/pdfs/article12.pdf",
+        "author": "Author 2"
+      },
+      {
+        "name": "Graf nazariyasi",
+        "link": "/article13",
+        "downloadLink": "/pdfs/article13.pdf",
+        "author": "Author 3"
+      },
+      {
+        "name": "Qo‘shimcha maqola 5",
+        "link": "/article14",
+        "downloadLink": "/pdfs/article14.pdf",
+        "author": "Author 4"
+      },
+      {
+        "name": "Qo‘shimcha maqola 6",
+        "link": "/article15",
+        "downloadLink": "/pdfs/article15.pdf",
+        "author": "Author 5"
+      }
+    ],
+    "info": {
+      "deadline": "24.12.2025",
+      "reviewPeriod": "3 days",
+      "publicationArticle": "3 days",
+      "publicationIssue": "27.12.2025",
+      "indexing": "10 days after publication",
+      "published": "2025-11-07"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Bulletin of Contemporary Researches: Multidisciplinary",
+    "image": "bulletin-multidisciplinary.png",
+    "description": "Ko‘p sohalar bo‘yicha ilmiy tadqiqotlar va maqolalar.",
+    "pageLink": "https://bulconre.com/index.php/mult",
+    "articles": [
+      {
+        "name": "Maqola 1",
+        "link": "/article16",
+        "downloadLink": "/pdfs/article16.pdf",
+        "author": "Author A"
+      },
+      {
+        "name": "Maqola 2",
+        "link": "/article17",
+        "downloadLink": "/pdfs/article17.pdf",
+        "author": "Author B"
+      },
+      {
+        "name": "Maqola 3",
+        "link": "/article18",
+        "downloadLink": "/pdfs/article18.pdf",
+        "author": "Author C"
+      },
+      {
+        "name": "Maqola 4",
+        "link": "/article19",
+        "downloadLink": "/pdfs/article19.pdf",
+        "author": "Author D"
+      },
+      {
+        "name": "Maqola 5",
+        "link": "/article20",
+        "downloadLink": "/pdfs/article20.pdf",
+        "author": "Author E"
+      }
+    ],
+    "info": {
+      "deadline": "10.11.2025",
+      "reviewPeriod": "5 days",
+      "publicationArticle": "5 days",
+      "publicationIssue": "15.11.2025",
+      "indexing": "within 10 days",
+      "published": "2025-10-20"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Bulletin of Contemporary Researches: Technical sciences",
+    "image": "bulletin-technical.png",
+    "description": "Texnika va innovatsiyalar bo‘yicha eng so‘nggi maqolalar.",
+    "pageLink": "https://bulconre.com/index.php/tech",
+    "articles": [
+      {
+        "name": "Maqola 1",
+        "link": "/article21",
+        "downloadLink": "/pdfs/article21.pdf",
+        "author": "Author X"
+      },
+      {
+        "name": "Maqola 2",
+        "link": "/article22",
+        "downloadLink": "/pdfs/article22.pdf",
+        "author": "Author Y"
+      },
+      {
+        "name": "Maqola 3",
+        "link": "/article23",
+        "downloadLink": "/pdfs/article23.pdf",
+        "author": "Author Z"
+      },
+      {
+        "name": "Maqola 4",
+        "link": "/article24",
+        "downloadLink": "/pdfs/article24.pdf",
+        "author": "Author W"
+      },
+      {
+        "name": "Maqola 5",
+        "link": "/article25",
+        "downloadLink": "/pdfs/article25.pdf",
+        "author": "Author V"
+      }
+    ],
+    "info": {
+      "deadline": "20.12.2025",
+      "reviewPeriod": "7 days",
+      "publicationArticle": "7 days",
+      "publicationIssue": "27.12.2025",
+      "indexing": "within 15 days",
+      "published": "2025-11-01"
+    }
+  }
+]

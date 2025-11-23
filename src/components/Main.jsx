@@ -1,136 +1,152 @@
-import React from "react";
+import React, { useState } from "react";
+import books from "../data/books.json";
+import imageMap from "../data/imageMap";
 import HeroBg from "../assets/main-img/bg-img-hero.jpg";
-import img1 from "../assets/main-img/resarch.png";
-import enginering from "../assets/main-img/enginering.jpg";
-import iomc from "../assets/main-img/iomc-2025.png";
-import bulletin1 from "../assets/main-img/bulletin-multidisciplinary.png";
-import bulletin2 from "../assets/main-img/bulletin-technical.png";
-
-const books = [
-  {
-    id: 1,
-    title: "Sun'iy Intellekt Asoslari",
-    image: img1,
-    description:
-      "AI bo‘yicha asosiy tushunchalar va ilmiy tadqiqotlar jamlanmasi.",
-    articles: [
-      { name: "AI etikasi", link: "#" },
-      { name: "Mashina o‘rganish asoslari", link: "#" },
-      { name: "Neyron tarmoqlar tarixi", link: "#" },
-    ],
-  },
-  {
-    id: 2,
-    title: "Ma'lumotlar Tahlili",
-    image: enginering,
-    description: "Data Science asoslari va amaliy tahlil metodlari.",
-    articles: [
-      { name: "Pythonda Data Cleaning", link: "#" },
-      { name: "Statistik modellash", link: "#" },
-      { name: "Big Data texnologiyalari", link: "#" },
-    ],
-  },
-  {
-    id: 3,
-    title: "Algoritmlar",
-    image: iomc,
-    description: "Algoritmlar nazariyasi va amaliy yechimlari.",
-    articles: [
-      { name: "Greedy algoritmlar", link: "#" },
-      { name: "DP: Dynamic Programming", link: "#" },
-      { name: "Graf nazariyasi", link: "#" },
-    ],
-  },
-  {
-    id: 4,
-    title: "Kibern xavfsizlik",
-    image: bulletin1,
-    description: "Zamonaviy xavfsizlik texnologiyalari va himoya usullari.",
-    articles: [
-      { name: "Web xavfsizlik asoslari", link: "#" },
-      { name: "SQL Injection tushuntirishi", link: "#" },
-      { name: "Xesh algoritmlar sharhi", link: "#" },
-    ],
-  },
-  {
-    id: 5,
-    title: "Dasturlash Asoslari",
-    image: bulletin2,
-    description: "Boshlang‘ich dasturlash metodlari va amaliy loyihalar.",
-    articles: [
-      { name: "OOP tushunchalari", link: "#" },
-      { name: "JavaScript fundamentalari", link: "#" },
-      { name: "Backend arxitektura", link: "#" },
-    ],
-  },
-];
 
 export default function Main() {
+  const [expandedBooks, setExpandedBooks] = useState([]);
+
+  const toggleExpand = (id) => {
+    setExpandedBooks((prev) =>
+      prev.includes(id) ? prev.filter((bookId) => bookId !== id) : [...prev, id]
+    );
+  };
+
   return (
     <main className="bg-[#DAD7CD] min-h-screen">
-      {/* ================= HERO SECTION ================= */}
+      {/* HERO SECTION */}
       <section
-        className="relative bg-cover bg-center bg-no-repeat h-[600px] flex items-center"
+        className="relative bg-cover bg-center h-[600px] flex items-center"
         style={{ backgroundImage: `url(${HeroBg})` }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
-
-        <div className="container text-center text-white relative z-10 px-4">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6 mt-8">
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="container relative z-10 text-center text-white px-4">
+          <h1 className="text-5xl sm:text-6xl font-extrabold mb-6 mt-8 drop-shadow-lg text-white">
             Ilmiy kitoblar va maqolalar jamlanmasi
           </h1>
-          <p className="text-lg sm:text-xl max-w-3xl mx-auto">
-            Siz uchun ilmiy kitoblar, maqolalar va tadqiqotlar bir joyda. Har
-            bir kitob bo‘yicha batafsil ma’lumot va tegishli maqolalar taqdim
-            etiladi.
+          <p className="text-lg sm:text-xl max-w-4xl mx-auto mb-6 leading-relaxed drop-shadow text-white">
+            Fer.Teach platformada siz sun'iy intellekt, data science, texnika va
+            boshqa ilmiy yo‘nalishlarda yaratilgan eng so‘nggi maqolalar,
+            tadqiqotlar va kitoblarni topishingiz mumkin. Har bir kitob sizning
+            bilimlaringizni kengaytiradi va amaliy tajribangizni oshiradi.
           </p>
         </div>
       </section>
 
-      {/* ================= BOOK CARDS ================= */}
-      <section className="container py-20 space-y-10">
-        {books.map((book, index) => (
-          <div
-            key={book.id}
-            className={`relative p-[3px] rounded-2xl
-              bg-gradient-to-r from-[#C7C9BB] via-[#DAD7CD] to-[#D2D4C8]
-              bg-[length:200%_200%] animate-border
-              shadow-lg group
-              ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} 
-              flex flex-col items-center transition-all duration-300`}
-          >
-            <div className="backdrop-blur-xl bg-white/20 group-hover:bg-white/10 rounded-2xl p-6 flex flex-col md:flex-row items-center w-full transition-all duration-300 hover:brightness-95">
-              {/* BOOK IMAGE */}
-              <img
-                src={book.image}
-                alt={book.title}
-                className="w-full md:w-1/2 h-64 object-contain rounded-xl mb-4 md:mb-0 bg-gray-100"
-              />
+      {/* ARTICLES SECTION */}
+      <section className="container py-16">
+        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
+          Ilmiy Maqolalar
+        </h2>
 
-              {/* TEXT CONTENT */}
-              <div className="md:w-1/2 md:px-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  {book.title}
-                </h3>
-                <p className="text-gray-700 mb-4">{book.description}</p>
+        <div className="space-y-14">
+          {books.map((book, index) => {
+            const isExpanded = expandedBooks.includes(book.id);
+            const displayedArticles = isExpanded
+              ? book.articles
+              : book.articles.slice(0, 3);
 
-                <h4 className="font-semibold text-gray-900 mb-2">Maqolalar:</h4>
-                <ul className="space-y-1">
-                  {book.articles.map((article, i) => (
-                    <li key={i}>
-                      <a
-                        href={article.link}
-                        className="text-blue-700 hover:underline"
+            return (
+              <div
+                key={book.id}
+                className={`flex flex-col md:flex-row items-start gap-6 p-6 rounded-3xl shadow-md bg-[#E6E4D8] hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 ${
+                  index % 2 !== 0 ? "md:flex-row-reverse" : ""
+                }`}
+              >
+                {/* BOOK IMAGE */}
+                <img
+                  src={imageMap[book.image]}
+                  alt={book.title}
+                  className="w-full md:w-1/3 h-auto object-cover rounded-2xl border border-gray-300 shadow-md transition-transform duration-300 hover:scale-105"
+                />
+
+                {/* BOOK CONTENT */}
+                <div className="md:w-2/3 flex flex-col gap-4 relative pt-10">
+                  <a
+                    href={book.pageLink}
+                    className="absolute top-2 right-2 bg-[#52796F] text-white px-3 py-1 rounded-full text-sm font-bold shadow-md hover:bg-[#395B58] transition-colors duration-300"
+                  >
+                    Maqola sahifasi
+                  </a>
+
+                  <h3 className="text-3xl font-bold text-gray-900">
+                    {book.title}
+                  </h3>
+                  <p className="text-gray-700 text-justify leading-relaxed">
+                    {book.description}
+                  </p>
+
+                  {/* INFO BOX */}
+                  <div className="bg-[#DAD7CD] p-4 rounded-xl space-y-2 text-gray-800 text-sm shadow-inner">
+                    <p>
+                      <span className="font-bold">Срок подачи:</span>{" "}
+                      {book.info.deadline}
+                    </p>
+                    <p>
+                      <span className="font-bold">Период рассмотрения:</span>{" "}
+                      {book.info.reviewPeriod}
+                    </p>
+                    <p>
+                      <span className="font-bold">Публикация статьи:</span>{" "}
+                      {book.info.publicationArticle}
+                    </p>
+                    <p>
+                      <span className="font-bold">Публикация выпуска:</span>{" "}
+                      {book.info.publicationIssue}
+                    </p>
+                    <p>
+                      <span className="font-bold">Индексация:</span>{" "}
+                      {book.info.indexing}
+                    </p>
+                    <p>
+                      <span className="font-bold">Опубликован:</span>{" "}
+                      {book.info.published}
+                    </p>
+                  </div>
+
+                  {/* ARTICLES LIST */}
+                  <div className="space-y-3">
+                    {displayedArticles.map((article, i) => (
+                      <div
+                        key={i}
+                        className="flex flex-col md:flex-row md:justify-between items-start md:items-center p-3 border-l-4 border-[#7A9E9F] bg-[#F0F1EC] rounded-lg hover:bg-[#E0E2D9] transition-all duration-300 shadow-sm"
                       >
-                        • {article.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                        <div>
+                          <a
+                            href={article.link}
+                            className="text-[#52796F] font-semibold hover:underline text-lg"
+                          >
+                            {article.name}
+                          </a>
+                          <p className="text-gray-600 text-sm">
+                            {article.author}
+                          </p>
+                        </div>
+                        <a
+                          href={article.downloadLink}
+                          download
+                          className="mt-2 md:mt-0 px-4 py-1 bg-[#52796F] text-white rounded-lg text-sm font-medium hover:bg-[#395B58] transition duration-300"
+                        >
+                          Download
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* TOGGLE BUTTON */}
+                  {book.articles.length > 3 && (
+                    <button
+                      onClick={() => toggleExpand(book.id)}
+                      className="self-start px-5 py-2 bg-gradient-to-r from-[#52796F] to-[#7A9E9F] text-white font-bold rounded-xl hover:from-[#395B58] hover:to-[#52796F] transition-all duration-300 shadow-lg mt-3"
+                    >
+                      {isExpanded ? "Yopish" : "Batafsil"}
+                    </button>
+                  )}
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            );
+          })}
+        </div>
       </section>
     </main>
   );
