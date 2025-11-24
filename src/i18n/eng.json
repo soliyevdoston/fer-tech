@@ -18,5 +18,36 @@
     "email": "Email: solijonovd97@gmail.com",
     "phone": "Phone: +998 913257706",
     "rights": "All rights reserved © 2025"
+  },
+
+  "hero": {
+    "title": "Collection of Scientific Books and Articles",
+    "description": "The Fer.Teach platform provides fast access to Uzbek and international scientific journals, conference materials, research databases, and scientific articles. Here, you can explore the latest scientific news, research results, and academic works, expanding your knowledge. Find all educational and scientific resources on a single platform!"
+  },
+  "articles": {
+    "sectionTitle": "Scientific Articles",
+    "articlePage": "Article Page",
+    "info": {
+      "deadline": "Article Submission Deadline",
+      "reviewPeriod": "Review Period",
+      "publicationArticle": "Article Publication",
+      "publicationIssue": "Issue Publication",
+      "indexing": "Indexing",
+      "published": "Published"
+    },
+    "download": "Download",
+    "expand": "Read More",
+    "collapse": "Collapse"
+  },
+  "search": {
+    "title": "Search by Article",
+    "placeholder": "Enter article name...",
+    "results": "Results: {{count}}",
+    "author": "Author",
+    "book": "Book",
+    "download": "Download",
+    "prev": "Previous",
+    "next": "Next",
+    "noResults": "Nothing found 😕"
   }
 }

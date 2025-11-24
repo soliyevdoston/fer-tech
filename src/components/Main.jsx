@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import books from "../data/books.json";
 import imageMap from "../data/imageMap";
 import HeroLight from "../assets/main-img/hero-light.jpg";
 import HeroDark from "../assets/main-img/hero-dark.jpg";
 
 export default function Main({ darkMode }) {
+  const { t } = useTranslation();
   const [expandedBooks, setExpandedBooks] = useState([]);
 
   const toggleExpand = (id) => {
@@ -30,15 +32,10 @@ export default function Main({ darkMode }) {
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="container relative z-10 text-center text-white px-4">
           <h1 className="text-5xl sm:text-6xl font-extrabold mb-6 mt-8 drop-shadow-lg">
-            Ilmiy kitoblar va maqolalar jamlanmasi
+            {t("hero.title")}
           </h1>
           <p className="text-lg sm:text-xl max-w-4xl mx-auto mb-6 leading-relaxed drop-shadow">
-            Fer.Teach platformasi sizga O‘zbekiston va xalqaro ilmiy jurnallar,
-            konferensiya materiallari, tadqiqotlar bazasi va ilmiy maqolalarni
-            tezkor qidirish imkonini taqdim etadi. Bu yerda siz so‘nggi ilmiy
-            yangiliklar, tadqiqot natijalari va akademik ishlar bilan tanishib,
-            o‘z bilim doirangizni kengaytirishingiz mumkin. Ilm-fan va ta’lim
-            resurslarini bitta platformada toping!
+            {t("hero.description")}
           </p>
         </div>
       </section>
@@ -46,7 +43,7 @@ export default function Main({ darkMode }) {
       {/* ARTICLES SECTION */}
       <section id="maqolalar" className="container py-16">
         <h2 className="text-4xl font-bold text-center mb-12">
-          Ilmiy Maqolalar
+          {t("articles.sectionTitle")}
         </h2>
 
         <div className="space-y-14">
@@ -75,7 +72,7 @@ export default function Main({ darkMode }) {
                     href={book.pageLink}
                     className="absolute top-2 right-2 bg-[#52796F] text-white px-3 py-1 rounded-full text-sm font-bold shadow-md hover:bg-[#395B58] transition-colors duration-300"
                   >
-                    Maqola sahifasi
+                    {t("articles.articlePage")}
                   </a>
 
                   <h3 className="text-3xl font-bold">{book.title}</h3>
@@ -86,36 +83,49 @@ export default function Main({ darkMode }) {
                   >
                     {book.description}
                   </p>
+
                   {/* INFO BOX */}
                   <div
                     className={`p-4 rounded-xl space-y-2 shadow-inner transition-colors duration-500 ${
                       darkMode
-                        ? "bg-gray-700 text-gray-200" // DARK MODE
-                        : "bg-[#DAD7CD] text-gray-800" // LIGHT MODE
+                        ? "bg-gray-700 text-gray-200"
+                        : "bg-[#DAD7CD] text-gray-800"
                     }`}
                   >
                     <p>
-                      <span className="font-bold">Срок подачи:</span>{" "}
+                      <span className="font-bold">
+                        {t("articles.info.deadline")}:
+                      </span>{" "}
                       {book.info.deadline}
                     </p>
                     <p>
-                      <span className="font-bold">Период рассмотрения:</span>{" "}
+                      <span className="font-bold">
+                        {t("articles.info.reviewPeriod")}:
+                      </span>{" "}
                       {book.info.reviewPeriod}
                     </p>
                     <p>
-                      <span className="font-bold">Публикация статьи:</span>{" "}
+                      <span className="font-bold">
+                        {t("articles.info.publicationArticle")}:
+                      </span>{" "}
                       {book.info.publicationArticle}
                     </p>
                     <p>
-                      <span className="font-bold">Публикация выпуска:</span>{" "}
+                      <span className="font-bold">
+                        {t("articles.info.publicationIssue")}:
+                      </span>{" "}
                       {book.info.publicationIssue}
                     </p>
                     <p>
-                      <span className="font-bold">Индексация:</span>{" "}
+                      <span className="font-bold">
+                        {t("articles.info.indexing")}:
+                      </span>{" "}
                       {book.info.indexing}
                     </p>
                     <p>
-                      <span className="font-bold">Опубликован:</span>{" "}
+                      <span className="font-bold">
+                        {t("articles.info.published")}:
+                      </span>{" "}
                       {book.info.published}
                     </p>
                   </div>
@@ -154,7 +164,7 @@ export default function Main({ darkMode }) {
                           download
                           className="mt-2 md:mt-0 px-4 py-1 bg-[#52796F] text-white rounded-lg text-sm font-medium hover:bg-[#395B58] transition duration-300"
                         >
-                          Download
+                          {t("articles.download")}
                         </a>
                       </div>
                     ))}
@@ -165,7 +175,9 @@ export default function Main({ darkMode }) {
                       onClick={() => toggleExpand(book.id)}
                       className="self-start px-5 py-2 bg-gradient-to-r from-[#52796F] to-[#7A9E9F] text-white font-bold rounded-xl hover:from-[#395B58] hover:to-[#52796F] transition-all duration-300 shadow-lg mt-3"
                     >
-                      {isExpanded ? "Yopish" : "Batafsil"}
+                      {isExpanded
+                        ? t("articles.collapse")
+                        : t("articles.expand")}
                     </button>
                   )}
                 </div>

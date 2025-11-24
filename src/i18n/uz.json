@@ -19,5 +19,35 @@
     "email": "Email: solijonovd97@gmail.com",
     "phone": "Telefon: +998 913257706",
     "rights": "Barcha huquqlar himoyalangan © 2025"
+  },
+  "hero": {
+    "title": "Ilmiy kitoblar va maqolalar jamlanmasi",
+    "description": "Fer.Teach platformasi sizga O‘zbekiston va xalqaro ilmiy jurnallar, konferensiya materiallari, tadqiqotlar bazasi va ilmiy maqolalarni tezkor qidirish imkonini taqdim etadi. Bu yerda siz so‘nggi ilmiy yangiliklar, tadqiqot natijalari va akademik ishlar bilan tanishib, o‘z bilim doirangizni kengaytirishingiz mumkin. Ilm-fan va ta’lim resurslarini bitta platformada toping!"
+  },
+  "articles": {
+    "sectionTitle": "Ilmiy Maqolalar",
+    "articlePage": "Maqola sahifasi",
+    "info": {
+      "deadline": "Maqola topshirish muddati",
+      "reviewPeriod": "Ko‘rib chiqish muddati",
+      "publicationArticle": "Maqola nashri",
+      "publicationIssue": "Jild nashri",
+      "indexing": "Indeksatsiya",
+      "published": "Chop etilgan"
+    },
+    "download": "Yuklab olish",
+    "expand": "Batafsil",
+    "collapse": "Yopish"
+  },
+  "search": {
+    "title": "Maqola bo‘yicha qidiruv",
+    "placeholder": "Maqola nomini kiriting...",
+    "results": "Natijalar: {{count}} ta",
+    "author": "Muallif",
+    "book": "Kitob",
+    "download": "Yuklab olish",
+    "prev": "Oldingi",
+    "next": "Keyingi",
+    "noResults": "Hech narsa topilmadi 😕"
   }
 }
