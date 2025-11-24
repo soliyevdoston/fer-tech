@@ -6,8 +6,11 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Footer({ darkMode }) {
+  const { t } = useTranslation();
+
   const iconStyle =
     "w-10 h-10 flex items-center justify-center rounded-full shadow-md transition-all duration-300";
 
@@ -22,28 +25,28 @@ export default function Footer({ darkMode }) {
         {/* Logo va tavsif */}
         <div className="flex flex-col space-y-4">
           <div className="flex items-center space-x-2">
-            <img src={Logo} alt="Fer.Teach Logo" className="w-10 h-10" />
-            <h5 className="text-xl font-bold">Fer.Teach</h5>
+            <img src={Logo} alt={t("brand") + " Logo"} className="w-10 h-10" />
+            <h5 className="text-xl font-bold">{t("brand")}</h5>
           </div>
           <p
             className={
               darkMode ? "text-gray-300 text-sm" : "text-gray-800 text-sm"
             }
           >
-            Ilmiy maqolalar, konferensiya materiallari va tadqiqotlar bazasi.
+            {t("footer.description")}
           </p>
         </div>
 
         {/* Tezkor linklar */}
         <div>
-          <h6 className="font-semibold mb-4">Tezkor linklar</h6>
+          <h6 className="font-semibold mb-4">{t("footer.quickLinks")}</h6>
           <ul className="space-y-2">
             <li>
               <a
                 className="hover:text-blue-600 transition-colors duration-300"
                 href="#"
               >
-                Asosiy sahifa
+                {t("footer.home")}
               </a>
             </li>
             <li>
@@ -51,7 +54,7 @@ export default function Footer({ darkMode }) {
                 className="hover:text-blue-600 transition-colors duration-300"
                 href="#"
               >
-                Maqolalar
+                {t("footer.articles")}
               </a>
             </li>
             <li>
@@ -59,16 +62,15 @@ export default function Footer({ darkMode }) {
                 className="hover:text-blue-600 transition-colors duration-300"
                 href="#"
               >
-                Qidiruv
+                {t("footer.search")}
               </a>
             </li>
             <li>
-              {" "}
               <a
                 className="hover:text-blue-600 transition-colors duration-300"
                 href="#"
               >
-                Maslahatlar
+                {t("footer.advice")}
               </a>
             </li>
           </ul>
@@ -76,26 +78,26 @@ export default function Footer({ darkMode }) {
 
         {/* Kontakt */}
         <div>
-          <h6 className="font-semibold mb-4">Kontakt</h6>
+          <h6 className="font-semibold mb-4">{t("footer.contact")}</h6>
           <p
             className={
               darkMode ? "text-gray-300 text-sm" : "text-gray-800 text-sm"
             }
           >
-            Email: solijonovd97@gmail.com
+            {t("footer.email")}
           </p>
           <p
             className={
               darkMode ? "text-gray-300 text-sm" : "text-gray-800 text-sm"
             }
           >
-            Telefon: +998 913257706
+            {t("footer.phone")}
           </p>
         </div>
 
         {/* Ijtimoiy tarmoqlar */}
         <div>
-          <h6 className="font-semibold mb-4">Ijtimoiy tarmoqlar</h6>
+          <h6 className="font-semibold mb-4">{t("footer.social")}</h6>
           <div className="flex space-x-4">
             <a
               href="#"
@@ -127,7 +129,7 @@ export default function Footer({ darkMode }) {
 
       {/* Copyright */}
       <div className="mt-8 text-center text-gray-700 dark:text-gray-400 text-sm">
-        © 2025 Fer.Teach. Barcha huquqlar himoyalangan.
+        © 2025 {t("brand")}. {t("footer.rights")}
       </div>
     </footer>
   );

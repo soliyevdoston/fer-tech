@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css"; // Tailwind import
+import App from "./App.jsx";
+import "./i18n"; // i18n ni ulash
+import "./index.css"; // yoki Tailwind o‘rnatilgan CSS
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

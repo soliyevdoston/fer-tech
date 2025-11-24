@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "home": "Home",
+    "articles": "Articles",
+    "search": "Search",
+    "contact": "Contact"
+  },
+  "brand": "Fer.Teach",
+  "footer": {
+    "description": "Database of scientific articles, conference materials, and research.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "social": "Social Media",
+    "home": "Home",
+    "articles": "Articles",
+    "search": "Search",
+    "advice": "Advice",
+    "email": "Email: solijonovd97@gmail.com",
+    "phone": "Phone: +998 913257706",
+    "rights": "All rights reserved © 2025"
+  }
+}

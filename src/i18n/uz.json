@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "articles": "Maqolalar",
+    "search": "Qidiruv",
+    "contact": "Aloqa"
+  },
+  "brand": "Fer.Teach",
+
+  "footer": {
+    "description": "Ilmiy maqolalar, konferensiya materiallari va tadqiqotlar bazasi.",
+    "quickLinks": "Tezkor linklar",
+    "contact": "Kontakt",
+    "social": "Ijtimoiy tarmoqlar",
+    "home": "Bosh sahifa",
+    "articles": "Maqolalar",
+    "search": "Qidiruv",
+    "advice": "Maslahatlar",
+    "email": "Email: solijonovd97@gmail.com",
+    "phone": "Telefon: +998 913257706",
+    "rights": "Barcha huquqlar himoyalangan © 2025"
+  }
+}
