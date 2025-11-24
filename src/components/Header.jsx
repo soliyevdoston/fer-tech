@@ -20,10 +20,12 @@ export default function Header({ darkMode }) {
         darkMode ? "bg-gray-800 text-gray-100" : "bg-[#DAD7CD] text-gray-900"
       }`}
     >
-      <div className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition">
-        <img src={Logo} alt="Logo" className="w-11 h-11" />
-        <h5 className="text-2xl font-bold tracking-wide">{t("brand")}</h5>
-      </div>
+      <a href="#">
+        <div className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition">
+          <img src={Logo} alt="Logo" className="w-11 h-11" />
+          <h5 className="text-2xl font-bold tracking-wide">{t("brand")}</h5>
+        </div>
+      </a>
 
       <nav className="hidden md:flex items-center space-x-8 font-medium">
         {[
