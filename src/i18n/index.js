@@ -1,17 +1,17 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import uz from "./uz.json";
-import uzc from "./uzc.json";
-import ru from "./ru.json";
-import eng from "./eng.json";
+import translationUz from "./locales/uz/translation.json";
+import translationUzc from "./locales/uzc/translation.json";
+import translationRu from "./locales/ru/translation.json";
+import translationEn from "./locales/en/translation.json";
 
 i18n.use(initReactI18next).init({
   resources: {
-    uz: { translation: uz },
-    uzc: { translation: uzc },
-    ru: { translation: ru },
-    eng: { translation: eng },
+    uz: { translation: translationUz },
+    uzc: { translation: translationUzc },
+    ru: { translation: translationRu },
+    en: { translation: translationEn },
   },
   lng: "uz",
   fallbackLng: "uz",
