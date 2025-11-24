@@ -37,10 +37,20 @@ export default function Header({ darkMode }) {
             onClick={() => handleScroll(item.id)}
             className="relative group transition text-left"
           >
-            <span className="group-hover:text-black dark:group-hover:text-white">
+            <span
+              className={`transition ${
+                darkMode
+                  ? "group-hover:text-white"
+                  : "group-hover:text-gray-700"
+              }`}
+            >
               {item.label}
             </span>
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white group-hover:w-full transition-all duration-300"></span>
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] w-0 ${
+                darkMode ? "bg-white" : "bg-gray-700"
+              } group-hover:w-full transition-all duration-300`}
+            ></span>
           </button>
         ))}
       </nav>
