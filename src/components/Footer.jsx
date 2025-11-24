@@ -22,7 +22,6 @@ export default function Footer({ darkMode }) {
       }`}
     >
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Logo va tavsif */}
         <div className="flex flex-col space-y-4">
           <div className="flex items-center space-x-2">
             <img src={Logo} alt={t("brand") + " Logo"} className="w-10 h-10" />
@@ -37,7 +36,6 @@ export default function Footer({ darkMode }) {
           </p>
         </div>
 
-        {/* Tezkor linklar */}
         <div>
           <h6 className="font-semibold mb-4">{t("footer.quickLinks")}</h6>
           <ul className="space-y-2">
@@ -76,7 +74,6 @@ export default function Footer({ darkMode }) {
           </ul>
         </div>
 
-        {/* Kontakt */}
         <div>
           <h6 className="font-semibold mb-4">{t("footer.contact")}</h6>
           <p
@@ -95,7 +92,6 @@ export default function Footer({ darkMode }) {
           </p>
         </div>
 
-        {/* Ijtimoiy tarmoqlar */}
         <div>
           <h6 className="font-semibold mb-4">{t("footer.social")}</h6>
           <div className="flex space-x-4">
@@ -127,7 +123,6 @@ export default function Footer({ darkMode }) {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="mt-8 text-center text-gray-700 dark:text-gray-400 text-sm">
         © 2025 {t("brand")}. {t("footer.rights")}
       </div>

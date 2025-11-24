@@ -21,7 +21,6 @@ export default function Main({ darkMode }) {
         darkMode ? "bg-gray-900 text-gray-100" : "bg-[#DAD7CD] text-gray-900"
       }`}
     >
-      {/* HERO SECTION */}
       <section
         id="hero"
         className="relative bg-cover bg-center h-[600px] flex items-center transition-all duration-500"
@@ -40,7 +39,6 @@ export default function Main({ darkMode }) {
         </div>
       </section>
 
-      {/* ARTICLES SECTION */}
       <section id="maqolalar" className="container py-16">
         <h2 className="text-4xl font-bold text-center mb-12">
           {t("articles.sectionTitle")}
@@ -84,7 +82,6 @@ export default function Main({ darkMode }) {
                     {book.description}
                   </p>
 
-                  {/* INFO BOX */}
                   <div
                     className={`p-4 rounded-xl space-y-2 shadow-inner transition-colors duration-500 ${
                       darkMode
